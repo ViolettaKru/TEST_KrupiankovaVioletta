@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sitek</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider();
+        });
+    </script>
+
+    
+</head>
+<body>
+    <div class="header">
+
+        <div class="menuii">
+            <div class="menu__icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          
+            <div class="menu__links">
+                <a class="menu__links-item" href="/">РЕТРОФИТ КОМПЛЕКТЫ</a>
+                <a class="menu__links-item" href="/">ТОКАРНЫЕ</a>
+                <a class="menu__links-item" href="/">ФРЕЗЕРНЫЕ</a>
+                <a class="menu__links-item" href="/">КОМПЛЕКТАЦИЯ</a>
+                <a class="menu__links-item" href="/">SITEKGRAM</a>
+               
+            </div>
+        </div>
+        <script>
+            (function($){
+                $(function() {
+                    $('.menu__icon').on('click', function() {
+                    $(this).closest('.menuii')
+                        .toggleClass('menu_state_open');
+                    });
+                    
+                    $('.menu__links-item').on('click', function() {
+                    // do something
+
+                    $(this).closest('.menuii')
+                        .removeClass('menu_state_open');
+                    });
+                });
+                })(jQuery);
+        </script>
+         
+        <div class="wrapper">
+
+
+            
+
+
+            <div class="top_part">
+                <div class="logo">
+                    <img src="img/index_logo.png" class="img_logo" alt="logo">
+                </div>
+                <ul class="top_part-ul">
+                    
+                    <li class="language">
+                        <a class="top_part-language_a1" href="#">
+                            РУС
+                        </a>
+                 
+                        <a class="top_part-language_a2" href="#">
+                            ENG
+                        </a>
+
+                    </li>
+                    <li class="valuta">
+                        <a class="valuta_1" href="#">
+                            Цены в
+                        </a>
+                        <a class="valuta_2" href="#">
+                            RUB
+                        </a>
+                    </li>
+                    <li class="group-58">
+                        <a class="belarus" href="#">
+                            Беларусь
+                        </a>
+                        <a class="bel-tel" href="#">
+                            +375 (29) 617-00-15
+                        </a>
+                    </li>
+                    <li class="group-57">
+                        <a class="rоssia" href="#">
+                            Россия
+                        </a>
+                        <a href="#">
+                            <div class="tel">
+                                <div class="tel1">+7 (481) 230-25-59</div>
+                                <div class="tel2">звонок бесплатный</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <button class="open-button" onclick="openForm()">Консультация</button>
+
+                        <div class="form-popup" id="myForm">
+                        <form action="#" class="form-container">
+                            <h1>Подписаться</h1>
+
+                            <label for="name"><b>Имя</b></label>
+                            <input type="text" placeholder="Ваше имя" name="name" required>
+                            
+                            <label for="email"><b>Е-мейл</b></label>
+                            <input type="text" placeholder="Ваш е-мейл" name="email" required>
+
+                            <button type="submit" class="btn">Отправить</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+                        </form>
+                        </div>
+                            
+                    </li>
+                </ul>
+            </div> <!--/top_part--> 
+            <hr class="hr"> 
+            <div class="bottom_part">
+                <div class="menu">
+                    <ul class="nav">
+                        <li>
+                            <a class="retrofit-kits a1" href="#">
+                                РЕТРОФИТ КОМПЛЕКТЫ
+                            </a>
+                        </li>
+                        <li class="aa2">
+                            <a class="turning a2" href="#">
+                                ТОКАРНЫЕ
+                            </a>
+                        </li>
+                        <li>
+                            <a class="turning a3" href="#">
+                                ФРЕЗЕРНЫЕ
+                            </a>
+                        </li>
+                        <li>
+                            <a  class="turning a4" href="#">
+                                КОМПЛЕКТАЦИЯ
+                            </a>
+                        </li>
+                        <li>
+                            <a class="turning a5" href="#">
+                                SITEKGRAM
+                            </a>
+                        </li>
+                        
+                        <li>  
+                            <i class="fas fa-bookmark"></i>     
+                            <a class="my_file a7" href="#">МОЙ ФАЙЛ</a> 
+                        </li>     
+                            <a class="turning a8" href="#"><img src="img/indicator_q.png" alt="f"></a>
+                        </li>
+                    </ul>
+                </div><!--/menu-->
+            </div><!--/bottom_part-->
+            
+        </div><!--/wrapper-->
+    </div><!--/header-->
+    <div class="block1">
+        <div class="wrapper">
+            <div class="b11">
+                <div class="side_bar">
+                    <ul class="side_menu">
+                        <li class="side_menu-li">
+                            <a href="#">У вас есть</a>
+                        </li>
+                        <li class="side_menu-li">
+                            <a href="#">Мы предлагаем</a>
+                        </li>
+                        <li class="side_menu-li">
+                            <a href="#">Как это работает</a>
+                        </li>
+                        <li class="side_menu-li">
+                            <a href="#">SINUMERIK 808D</a>
+                        </li>
+                        <li class="side_menu-li">
+                            <a href="#">Кто мы</a>
+                        </li>
+                    </ul>
+                    <ul class="side_menu2">    
+                        <li class="side_menu-li2">
+                            <a href="#">SITEKGRAM </a>
+                        </li>
+                        <li class="side_menu-li2">
+                            <a href="#">ШЕСТЬ способов связаться с нами</a>
+                        </li>
+                    </ul>
+                </div> <!--/side_bar-->
+                <div class="video_block">
+                    <div class="slider">
+                        <div><img style="margin-left: 40px;" src="img/video.png" alt="a"></div>
+                        <div><img style="margin-left: 40px;" src="img/Rectangle.png" alt="a"></div>
+                        <div><img style="margin-left: 40px;" src="img/video.png" alt="a"></div>
+                        <div><img style="margin-left: 40px;" src="img/Rectangle.png" alt="a"></div>
+                        <div><img style="margin-left: 40px;" src="img/video.png" alt="a"></div>
+                        <div><img style="margin-left: 40px;" src="img/Rectangle.png" alt="a"></div>
+                    </div>
+                </div> <!--/video_block-->
+            </div>
+        </div><!--/wrapper-->
+    </div><!--/block1-->
+    <div class="block2">
+        <div class="wrapper">
+            <div class="ab">
+                <div class="b2-1">
+
+                </div>
+                <div class="b2-2">
+                    <div class="b2-2-text">
+                        <p>У вас есть все, <br>чтобы модернизировать <br>старый станок</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/block2-->
+    <div class="block3">
+        <div class="wrapper">
+            <div class="ab">
+                <div class="b2-3">
+                    <div class="bblock11">
+                        <div class="bblock1">
+                            <ul><h2>На каждом предприятии:</h2>
+                                <li>	
+                                    <i class="fas fa-check"></i> Надежные, “неубиваемые”<br> советские станки типа <br><b> 16A20ФЗ, ГФ2171ФЗ, 16МЗ0ФЗ</b> </li>
+                                <li>	
+                                    <i class="fas fa-check"></i> Штат опытных слесарей и <br>механиков, способных<br> восстановить станок </li>
+                            </ul>
+                            <ul><h2>Но:</h2>
+                                <li>	
+                                    <i class="fas fa-check"></i> Устаревшая электрониа станка<br> нуждается в частых ремонтах </li>
+                                <li>	
+                                    <i class="fas fa-check"></i> Нет опытных сотрудников для<br> внедрения новой системы<br> управления </li>
+                            </ul>
+                        </div><!--/bblock1-->
+                    </div><!--/bblock11-->
+                    
+                </div><!--/b2-3-->
+                <div class="bblock22">
+                    <img src="img/small_video.png" alt="a">
+                </div><!--/bblock22-->
+            </div><!--/ab-->
+        </div><!--/wrapper-->
+    </div><!--/block3-->
+    <div class="block4">
+        <div class="wrapper">
+            <div class="block4-header">
+                <p>КАТАЛОГ РЕТФРОФИТ-КОМПЛЕКТОВ</p>
+            </div><!--/block4-header-->
+            <div class="checbox-wrapper">
+                <div class="checbox">
+                    <div class="checbox-b1">
+                        <form  class="checbox-b1-1 c" method="post" action="input5.php">
+                            <p><b>ТИП СТАНКА</b></p><p></p>
+                            <p> 
+                                <input style="margin-top: 10px;" type="checkbox" name="option1" value="a1" checked>Фрезерный<Br>
+                                    <br>
+                                <input type="checkbox" name="option2" value="a2">Токарный<Br>
+                            </p>
+                        </form>
+                    </div><!--/checbox-b1-->
+                    <div class="checbox-b2">
+                        <form  class="checbox-b1-1 cc" method="post" action="input5.php">
+                            <p><b>МОДЕЛЬ СТАНКА</b></p><p></p>
+                            <p> 
+                                <p> Бренд 1</p>
+                                <input style="margin-left: 30px; margin-top: 10px;" type="checkbox" name="option1" value="a1" checked>16А20<Br>
+                                <input style="margin-left: 30px; margin-top: 10px;" type="checkbox" name="option2" value="a2">16М30<Br>
+                                <p>Бренд 2</p>    
+                            </p>
+                        </form>
+                    </div><!--/checbox-b2-->
+                    <div class="checbox-b3">
+                        <form  class="checbox-b1-1 ccc" method="post" action="input5.php">
+                            <p><b>ВАРИАНТ ПОСТАВКИ <img src="img/pop_up.png" alt="f"></b></p><p></p>
+                            <p> 
+                                <input style="margin-top: 10px;" type="checkbox" name="option1" value="a1" checked>Модули<Br><br>
+                                <input style="margin-top: 10px;" type="checkbox" name="option2" value="a2">Монтажные панели<Br><br>
+                                <input style="margin-top: 10px;" type="checkbox" name="option2" value="a2">Электрошкаф<Br><br>
+                            </p>
+                        </form>
+                    </div><!--/checbox-b3-->
+                </div><!--/checbox-->
+                <div class="search">
+                    <form>
+                        <input type="text"  placeholder="Искать здесь...">
+                        <button type="submit">	
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <div class="clear">
+                        <p>Очистить фильтр
+                            <i class="fas fa-times"></i>
+                        </p>
+                    </div>
+                </div><!--/search-->
+            </div><!--/checbox-wrapper--->
+            <div clacc="p"> <p>Показано 3 из 8</p></div>
+            <div class="block4-slider">
+                <div class="slider">
+                    <div class="sl-b1">
+                        <div class="slider-wrapper">
+                            <div class="d1">
+                                <img src="img/pic.png" alt="z"> 
+                            </div>
+                            <div class="d1-text">
+                                <h4>Ретрофит-комплект<br> для станка</h4>
+                                <p>Не дорогое ЧПУ, созданное SIEMENS,<br> для конкуренции
+                                    на азиатском рынке<br> и производится в количестве более<br>
+                                    10000 штук в год...
+                                </p>
+                                <p id="d1-p">Цена <b>от 6 000 €</b> </p>
+                            </div>  
+                            <div class="s-img">
+                                <img src="img/teg.png" alt="t">
+                                <img src="img/teg1.png" alt="t">
+                                <img src="img/teg2.png" alt="t">
+                            </div>  
+                        </div>
+
+
+                        <div class="slider-wrapper">
+                            <div class="d1">
+                                <img src="img/pic.png" alt="z"> 
+                            </div>
+                            <div class="d1-text">
+                                <h4>Ретрофит-комплект<br> для станка</h4>
+                                <p>Не дорогое ЧПУ, созданное SIEMENS,<br> для конкуренции
+                                    на азиатском рынке<br> и производится в количестве более<br>
+                                    10000 штук в год...
+                                </p>
+                                <p id="d1-p">Цена <b>от 6 000 €</b></p>
+                            </div>  
+                            <div class="s-img">
+                                <img src="img/teg.png" alt="t">
+                                <img src="img/teg1.png" alt="t">
+                                <img src="img/teg2.png" alt="t">
+                            </div>  
+                        </div>
+                        <div class="slider-wrapper">  
+                            <div class="d1">
+                                <img src="img/pic.png" alt="z"> 
+                            </div>
+                            <div class="d1-text">
+                                <h4>Ретрофит-комплект<br> для станка</h4>
+                                <p>Не дорогое ЧПУ, созданное SIEMENS,<br> для конкуренции
+                                    на азиатском рынке<br> и производится в количестве более<br>
+                                    10000 штук в год...
+                                </p>
+                                <p id="d1-p">Цена <b>от 6 000 €</b></p>
+                            </div>  
+                            <div class="s-img">
+                                <img src="img/teg.png" alt="t">
+                                <img src="img/teg1.png" alt="t">
+                                <img src="img/teg2.png" alt="t">
+                            </div>  
+
+                        </div>
+                    </div><!--sl-b2-->
+
+                    <div class="sl-b1">
+                        <div class="slider-wrapper">
+                            <div class="d1">
+                                <img src="img/pic.png" alt="z"> 
+                            </div>
+                            <div class="d1-text">
+                                <h4>Ретрофит-комплект<br> для станка</h4>
+                                <p>Не дорогое ЧПУ, созданное SIEMENS,<br> для конкуренции
+                                    на азиатском рынке<br> и производится в количестве более<br>
+                                    10000 штук в год...
+                                </p>
+                                <p id="d1-p">Цена <b>от 6 000 €</b></p>
+                            </div>  
+                            <div class="s-img">
+                                <img src="img/teg.png" alt="t">
+                                <img src="img/teg1.png" alt="t">
+                                <img src="img/teg2.png" alt="t">
+                            </div>  
+                        </div>
+
+
+                        <div class="slider-wrapper">
+                            <div class="d1">
+                                <img src="img/pic.png" alt="z"> 
+                            </div>
+                            <div class="d1-text">
+                                <h4>Ретрофит-комплект<br> для станка</h4>
+                                <p>Не дорогое ЧПУ, созданное SIEMENS,<br> для конкуренции
+                                    на азиатском рынке<br> и производится в количестве более<br>
+                                    10000 штук в год...
+                                </p>
+                                <p id="d1-p">Цена <b>от 6 000 €</b></p>
+                            </div>  
+                            <div class="s-img">
+                                <img src="img/teg.png" alt="t">
+                                <img src="img/teg1.png" alt="t">
+                                <img src="img/teg2.png" alt="t">
+                            </div>  
+                        </div>
+                        <div class="slider-wrapper">  
+                            <div class="d1">
+                                <img src="img/pic.png" alt="z"> 
+                            </div>
+                            <div class="d1-text">
+                                <h4>Ретрофит-комплект<br> для станка</h4>
+                                <p>Не дорогое ЧПУ, созданное SIEMENS,<br> для конкуренции
+                                    на азиатском рынке<br> и производится в количестве более<br>
+                                    10000 штук в год...
+                                </p>
+                                <p id="d1-p">Цена <b>от 6 000 €</b></p>
+                            </div>  
+                            <div class="s-img">
+                                <img src="img/teg.png" alt="t">
+                                <img src="img/teg1.png" alt="t">
+                                <img src="img/teg2.png" alt="t">
+                            </div>  
+
+                        </div>
+                    </div><!--sl-b2-->
+                    <div class="sl-b1">
+                        <div class="slider-wrapper">
+                            <div class="d1">
+                                <img src="img/pic.png" alt="z"> 
+                            </div>
+                            <div class="d1-text">
+                                <h4>Ретрофит-комплект<br> для станка</h4>
+                                <p>Не дорогое ЧПУ, созданное SIEMENS,<br> для конкуренции
+                                    на азиатском рынке<br> и производится в количестве более<br>
+                                    10000 штук в год...
+                                </p>
+                                <p id="d1-p">Цена <b>от 6 000 €</b></p>
+                            </div>  
+                            <div class="s-img">
+                                <img src="img/teg.png" alt="t">
+                                <img src="img/teg1.png" alt="t">
+                                <img src="img/teg2.png" alt="t">
+                            </div>  
+                        </div>
+
+
+                        <div class="slider-wrapper">
+                            <div class="d1">
+                                <img src="img/pic.png" alt="z"> 
+                            </div>
+                            <div class="d1-text">
+                                <h4>Ретрофит-комплект<br> для станка</h4>
+                                <p>Не дорогое ЧПУ, созданное SIEMENS,<br> для конкуренции
+                                    на азиатском рынке<br> и производится в количестве более<br>
+                                    10000 штук в год...
+                                </p>
+                                <p id="d1-p">Цена <b>от 6 000 €</b></p>
+                            </div>  
+                            <div class="s-img">
+                                <img src="img/teg.png" alt="t">
+                                <img src="img/teg1.png" alt="t">
+                                <img src="img/teg2.png" alt="t">
+                            </div>  
+                        </div>
+                        <div class="slider-wrapper">  
+                            <div class="d1">
+                                <img src="img/pic.png" alt="z"> 
+                            </div>
+                            <div class="d1-text">
+                                <h4>Ретрофит-комплект<br> для станка</h4>
+                                <p>Не дорогое ЧПУ, созданное SIEMENS,<br> для конкуренции
+                                    на азиатском рынке<br> и производится в количестве более<br>
+                                    10000 штук в год...
+                                </p>
+                                <p id="d1-p">Цена <b>от 6 000 €</b></p>
+                            </div>  
+                            <div class="s-img">
+                                <img src="img/teg.png" alt="t">
+                                <img src="img/teg1.png" alt="t">
+                                <img src="img/teg2.png" alt="t">
+                            </div>  
+
+                        </div>
+                    </div><!--sl-b2-->
+
+                </div> <!--/slider-->
+            </div><!--/block4-slider-->
+        </div><!--/wrapper-->
+    </div><!--/block4-->
+    <div class="block5">
+        <div class="wrapper">
+            <div class="block4-header">
+                <p>ШЕСТЬ способов получить информацию</p>
+            </div><!--/block4-header-->
+            <div class="block5-tab">
+                <div class="tabs">
+                    <input id="tab1" type="radio" name="tabs" checked>
+                    <label for="tab1" title="Вкладка 1">01 Мой файл</label>
+                 
+                    <input id="tab2" type="radio" name="tabs">
+                    <label for="tab2" title="Вкладка 2">02 Видео 1x1</label>
+                 
+                    <input id="tab3" type="radio" name="tabs">
+                    <label for="tab3" title="Вкладка 3">03 Заказать вебинар</label>
+                 
+                    <input id="tab4" type="radio" name="tabs">
+                    <label for="tab4" title="Вкладка 4">04 Сотрудники</label>
+
+                    <input id="tab5" type="radio" name="tabs">
+                    <label for="tab5" title="Вкладка 5">05 FAQ5</label>
+                 
+                    <section id="content-tab1">
+                        <div class="tab-1">
+                            <div class="tab1-block1">
+                                <div class="tab1-block1_text">
+                                    <p>Cохраняйте все полезные материалы на нашем сайте<br>
+                                         в один документ, который будет сгенерирован в<br> удобном виде в формате PDF 
+                                    </p>
+                                    <p>Помечайте <i class="fas fa-bookmark"></i> необходимые материалы <br>
+                                         <span>(статьи, изображения, инструкции, новости и.т.д.)</span>
+                                    </p>
+                                    <p>Зайдите в Мой файл и нажмите кнопку <br>“Сгенерировать”</p>
+                                    <p>Получите готовый документ на e-mail</p>
+                                    <p>Или выберите один из готовых файлов, собранный <br>нашими специалистами по интересующей вас теме</p>
+                                    <button class="btn-tab"><i class="fas fa-bookmark"></i> МОЙ ФАЙТ</button>
+                                </div><!--/tab1-block1_text-->
+                            </div><!--/tab5-block1-->
+                            <div class="tab5-block2">
+                                <div class="slider">
+                                    <div class="sl-b1">
+                                        <div class="slider-wrapper">
+                                            <div class="d1">
+                                                <img src="img/pic1.png" alt="z"> 
+                                            </div>
+                                            <div class="d1-text">
+                                                <h4>Готовый файл “Продольно-<br>фрезерные станки РАМА”</h4>
+                                                <p>И. Иванов, <br>менеджер по продажам 
+                                                </p>
+                                                
+                                            </div>  
+                                            <div class="s-img1">
+                                                <img src="img/teg11.png" alt="r">
+                                            </div>
+                                            <div class="s-img">
+                                                <img src="img/teg12.png" alt="t">
+                                                <img src="img/teg13.png" alt="t">
+                                                <img src="img/teg14.png" alt="t">
+                                            </div>  
+                                        </div><!--/slider-wrapper-->
+                                        <div class="slider-wrapper">
+                                            <div class="d1">
+                                                <img src="img/pic1.png" alt="z"> 
+                                            </div>
+                                            <div class="d1-text">
+                                                <h4>Готовый файл “Продольно-<br>фрезерные станки РАМА”</h4>
+                                                <p>И. Иванов, <br>менеджер по продажам 
+                                                </p>
+                                                
+                                            </div>  
+                                            <div class="s-img1">
+                                                <img src="img/teg11.png" alt="r">
+                                            </div>
+                                            <div class="s-img">
+                                                <img src="img/teg12.png" alt="t">
+                                                <img src="img/teg13.png" alt="t">
+                                                <img src="img/teg14.png" alt="t">
+                                            </div>  
+                                        </div><!--/slider-wrapper-->
+                                    </div><!--/sl-b1-->
+                                    <div class="sl-b1">
+                                        <div class="slider-wrapper">
+                                            <div class="d1">
+                                                <img src="img/pic1.png" alt="z"> 
+                                            </div>
+                                            <div class="d1-text">
+                                                <h4>Готовый файл “Продольно-<br>фрезерные станки РАМА”</h4>
+                                                <p>И. Иванов, <br>менеджер по продажам 
+                                                </p>
+                                                
+                                            </div>  
+                                            <div class="s-img1">
+                                                <img src="img/teg11.png" alt="r">
+                                            </div>
+                                            <div class="s-img">
+                                                <img src="img/teg12.png" alt="t">
+                                                <img src="img/teg13.png" alt="t">
+                                                <img src="img/teg14.png" alt="t">
+                                            </div>  
+                                        </div><!--/slider-wrapper-->
+                                        <div class="slider-wrapper">
+                                            <div class="d1">
+                                                <img src="img/pic1.png" alt="z"> 
+                                            </div>
+                                            <div class="d1-text">
+                                                <h4>Готовый файл “Продольно-<br>фрезерные станки РАМА”</h4>
+                                                <p>И. Иванов, <br>менеджер по продажам 
+                                                </p>
+                                                
+                                            </div>  
+                                            <div class="s-img1">
+                                                <img src="img/teg11.png" alt="r">
+                                            </div>
+                                            <div class="s-img">
+                                                <img src="img/teg12.png" alt="t">
+                                                <img src="img/teg13.png" alt="t">
+                                                <img src="img/teg14.png" alt="t">
+                                            </div>  
+                                        </div><!--/slider-wrapper-->
+                                    </div><!--/sl-b1-->
+                                    <div class="sl-b1">
+                                        <div class="slider-wrapper">
+                                            <div class="d1">
+                                                <img src="img/pic1.png" alt="z"> 
+                                            </div>
+                                            <div class="d1-text">
+                                                <h4>Готовый файл “Продольно-<br>фрезерные станки РАМА”</h4>
+                                                <p>И. Иванов, <br>менеджер по продажам 
+                                                </p>
+                                                
+                                            </div>  
+                                            <div class="s-img1">
+                                                <img src="img/teg11.png" alt="r">
+                                            </div>
+                                            <div class="s-img">
+                                                <img src="img/teg12.png" alt="t">
+                                                <img src="img/teg13.png" alt="t">
+                                                <img src="img/teg14.png" alt="t">
+                                            </div>  
+                                        </div><!--/slider-wrapper-->
+                                        <div class="slider-wrapper">
+                                            <div class="d1">
+                                                <img src="img/pic1.png" alt="z"> 
+                                            </div>
+                                            <div class="d1-text">
+                                                <h4>Готовый файл “Продольно-<br>фрезерные станки РАМА”</h4>
+                                                <p>И. Иванов, <br>менеджер по продажам 
+                                                </p>
+                                                
+                                            </div>  
+                                            <div class="s-img1">
+                                                <img src="img/teg11.png" alt="r">
+                                            </div>
+                                            <div class="s-img">
+                                                <img src="img/teg12.png" alt="t">
+                                                <img src="img/teg13.png" alt="t">
+                                                <img src="img/teg14.png" alt="t">
+                                            </div>  
+                                        </div><!--/slider-wrapper-->
+                                    </div><!--/sl-b1-->
+                                    <div class="sl-b1">
+                                        <div class="slider-wrapper">
+                                            <div class="d1">
+                                                <img src="img/pic1.png" alt="z"> 
+                                            </div>
+                                            <div class="d1-text">
+                                                <h4>Готовый файл “Продольно-<br>фрезерные станки РАМА”</h4>
+                                                <p>И. Иванов, <br>менеджер по продажам 
+                                                </p>
+                                                
+                                            </div>  
+                                            <div class="s-img1">
+                                                <img src="img/teg11.png" alt="r">
+                                            </div>
+                                            <div class="s-img">
+                                                <img src="img/teg12.png" alt="t">
+                                                <img src="img/teg13.png" alt="t">
+                                                <img src="img/teg14.png" alt="t">
+                                            </div>  
+                                        </div><!--/slider-wrapper-->
+                                        <div class="slider-wrapper">
+                                            <div class="d1">
+                                                <img src="img/pic1.png" alt="z"> 
+                                            </div>
+                                            <div class="d1-text">
+                                                <h4>Готовый файл “Продольно-<br>фрезерные станки РАМА”</h4>
+                                                <p>И. Иванов, <br>менеджер по продажам 
+                                                </p>
+                                                
+                                            </div>  
+                                            <div class="s-img1">
+                                                <img src="img/teg11.png" alt="r">
+                                            </div>
+                                            <div class="s-img">
+                                                <img src="img/teg12.png" alt="t">
+                                                <img src="img/teg13.png" alt="t">
+                                                <img src="img/teg14.png" alt="t">
+                                            </div>  
+                                        </div><!--/slider-wrapper-->
+                                    </div><!--/sl-b1-->
+                                    <div class="sl-b1">
+                                        <div class="slider-wrapper">
+                                            <div class="d1">
+                                                <img src="img/pic1.png" alt="z"> 
+                                            </div>
+                                            <div class="d1-text">
+                                                <h4>Готовый файл “Продольно-<br>фрезерные станки РАМА”</h4>
+                                                <p>И. Иванов, <br>менеджер по продажам 
+                                                </p>
+                                                
+                                            </div>  
+                                            <div class="s-img1">
+                                                <img src="img/teg11.png" alt="r">
+                                            </div>
+                                            <div class="s-img">
+                                                <img src="img/teg12.png" alt="t">
+                                                <img src="img/teg13.png" alt="t">
+                                                <img src="img/teg14.png" alt="t">
+                                            </div>  
+                                        </div><!--/slider-wrapper-->
+                                        <div class="slider-wrapper">
+                                            <div class="d1">
+                                                <img src="img/pic1.png" alt="z"> 
+                                            </div>
+                                            <div class="d1-text">
+                                                <h4>Готовый файл “Продольно-<br>фрезерные станки РАМА”</h4>
+                                                <p>И. Иванов, <br>менеджер по продажам 
+                                                </p>
+                                                
+                                            </div>  
+                                            <div class="s-img1">
+                                                <img src="img/teg11.png" alt="r">
+                                            </div>
+                                            <div class="s-img">
+                                                <img src="img/teg12.png" alt="t">
+                                                <img src="img/teg13.png" alt="t">
+                                                <img src="img/teg14.png" alt="t">
+                                            </div>  
+                                        </div><!--/slider-wrapper-->
+                                    </div><!--/sl-b1-->
+                                    <div class="sl-b1">
+                                        <div class="slider-wrapper">
+                                            <div class="d1">
+                                                <img src="img/pic1.png" alt="z"> 
+                                            </div>
+                                            <div class="d1-text">
+                                                <h4>Готовый файл “Продольно-<br>фрезерные станки РАМА”</h4>
+                                                <p>И. Иванов, <br>менеджер по продажам 
+                                                </p>
+                                                
+                                            </div>  
+                                            <div class="s-img1">
+                                                <img src="img/teg11.png" alt="r">
+                                            </div>
+                                            <div class="s-img">
+                                                <img src="img/teg12.png" alt="t">
+                                                <img src="img/teg13.png" alt="t">
+                                                <img src="img/teg14.png" alt="t">
+                                            </div>  
+                                        </div><!--/slider-wrapper-->
+                                        <div class="slider-wrapper">
+                                            <div class="d1">
+                                                <img src="img/pic1.png" alt="z"> 
+                                            </div>
+                                            <div class="d1-text">
+                                                <h4>Готовый файл “Продольно-<br>фрезерные станки РАМА”</h4>
+                                                <p>И. Иванов, <br>менеджер по продажам 
+                                                </p>
+                                                
+                                            </div>  
+                                            <div class="s-img1">
+                                                <img src="img/teg11.png" alt="r">
+                                            </div>
+                                            <div class="s-img">
+                                                <img src="img/teg12.png" alt="t">
+                                                <img src="img/teg13.png" alt="t">
+                                                <img src="img/teg14.png" alt="t">
+                                            </div>  
+                                        </div><!--/slider-wrapper-->
+                                    </div><!--/sl-b1-->
+                                </div><!--/slider-->
+                            </div><!--/tab1-block2-->
+                        </div><!--/tab-1-->
+                    </section>  
+                    <section id="content-tab2">
+                        <p>
+                          Здесь размещаете любое содержание....
+                        </p>
+                    </section> 
+                    <section id="content-tab3">
+                        <p>
+                          Здесь размещаете любое содержание....
+                        </p>
+                    </section> 
+                    <section id="content-tab4">
+                        <p>
+                          Здесь размещаете любое содержание....
+                        </p>
+                    </section> 
+                    <section id="content-tab5">
+                        <p>
+                            Здесь размещаете любое содержание....
+                          </p>  
+                    </section>   
+                </div>
+            </div>
+        </div>
+    </div><!--/block5-->
+    <div class="footer">
+        <div class="wrapper">
+            <div class="top_part">
+                <div class="logo">
+                    <img src="img/index_logo.png" class="img_logo" alt="logo">
+                </div>
+                
+            <div class="bottom_part">
+                <div class="menu1">
+                    <ul class="nav1">
+                        <li>
+                            <a class="retrofit-kits1 a1" href="#">
+                                РЕТРОФИТ КОМПЛЕКТЫ
+                            </a>
+                        </li>
+                        <li class="aa2">
+                            <a class="turning a2" href="#">
+                                ТОКАРНЫЕ
+                            </a>
+                        </li>
+                        <li>
+                            <a class="turning a3" href="#">
+                                ФРЕЗЕРНЫЕ
+                            </a>
+                        </li>
+                        <li>
+                            <a  class="turning a4" href="#">
+                                КОМПЛЕКТАЦИЯ
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-tel">
+                        <li class="group-57-1">
+                            <a href="#">
+                                <div class="tel">
+                                    <div class="tel1">+7 (481) 230-25-59</div>
+                                    
+                                </div>
+                            </a>
+                            <a class="rоssia" href="#">
+                                Звонок по России бесплатный
+                            </a>
+                            
+                            
+                        </li>
+                        <li class="group-58-1">
+                            
+                            
+                            <a class="bel-tel" href="#">
+                                +375 (29) 617-00-15
+                            </a>
+                            <a class="belarus" href="#">
+                                Беларусь
+                            </a>
+                        </li>
+                        
+                    </ul>  
+                </div> <!--/menu1--> 
+                <hr class="hr">
+                <div class="fbt">
+                    <div class="footer-block1">
+                        <p> <b> Российская Федерация</b>, 214005, Смоленск<br>
+                             ул. Свердлова, 24, офис 3/1 <br>8.00-17.00 по МСК
+                        </p>
+                        <p>
+                            <b> Республика Беларусь</b>, 220040, Минск, ул.<br> 
+                            Сурганова, 88, помещение 3, офис 1<br> 9.00-18.00 по МСК 
+                        </p>
+                    </div>
+                    <div class="footer-block2">
+                        <p>
+                            +7 (800) 350-74-04<br> info@sitek-group.ru
+                        </p>
+                        <p>
+                            +375 (17) 217-00-15 <br>info@sitek-group.ru
+                        </p>
+                    </div>
+                    <div class="footer-block3">
+                       
+                            <a href="#">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        <div class="fooret-block3_1">
+                            Не является публичной офертой
+                        </div>
+                    </div>
+                </div>
+                </div><!--/menu-->
+            </div><!--/bottom_part-->
+            
+        </div>
+    </div>
+    <script>
+        function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+    </script>
+</body>
+</html>
